@@ -1,0 +1,11 @@
+version: 1.0
+provider:
+  name: openfaas
+  ## TODO: Enter the deploy destination URL
+  gateway: deploy-destination
+functions:
+  faas-test:
+    lang: node14
+    handler: ./faas-test
+    ## TODO: Enter the actual image
+    image: image
